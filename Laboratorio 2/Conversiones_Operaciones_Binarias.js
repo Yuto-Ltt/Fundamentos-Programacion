@@ -75,17 +75,20 @@ let operacion = prompt("Ingrese la acción a realizar: \n1=convertir binario a d
             break;
         //Resta
         case '4':
+            let binario1 = prompt("Ingresa el binario 1");
+            let binario2 = prompt("Ingresa el binario 2"); 
+    
             let minuendo = binarioDecimal(binario1);
             let sustraendo = binarioDecimal(binario2);
             let resultado = minuendo-sustraendo;
             if (resultado<0) {
-            let positivo = resultado*-1
+            let positivo = resultado*-1;
             let resutadoBinario = decimalBinario(positivo);
             alert("-"+resutadoBinario);
             }else{
             let resutadoBinario = decimalBinario(resultado);
             alert(resutadoBinario);
-            }
+            }   
             break;
         //Multiplicacion
         case '5':
